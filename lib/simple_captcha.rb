@@ -77,6 +77,9 @@ module SimpleCaptcha
   mattr_accessor :partial_path
   @@partial_path = 'simple_captcha/simple_captcha'
 
+  mattr_accessor :pointsize
+  @@pointsize = 22
+
   def self.add_image_style(name, params = [])
     SimpleCaptcha::ImageHelpers.image_styles.update(name.to_s => params)
   end

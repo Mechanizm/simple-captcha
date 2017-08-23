@@ -72,7 +72,7 @@ module SimpleCaptcha #:nodoc
         params << "-size #{SimpleCaptcha.image_size}"
         params << "-wave #{amplitude}x#{frequency}"
         params << "-gravity Center"
-        params << "-pointsize 22"
+        params << "-pointsize #{SimpleCaptcha.pointsize}"
         params << "-implode #{ImageHelpers.implode}"
         params << "label:#{text}"
         unless SimpleCaptcha.font.empty?
